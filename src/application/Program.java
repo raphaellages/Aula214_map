@@ -23,7 +23,8 @@ public class Program {
 			}
 			else {
 				int oldVotos = apuracao.get(candidato);
-				apuracao.replace(candidato, oldVotos , oldVotos+votos);
+				apuracao.replace(candidato, oldVotos , oldVotos+votos); //poderia ter usado o map.put como na linha abaixo comentada
+//				apuracao.put(candidato, oldVotos+votos);				
 			}
 			line = br.readLine();
 				
